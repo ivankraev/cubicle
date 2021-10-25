@@ -1,35 +1,8 @@
-const express = require('express');
-
+const express = require('express')
 const config = require('./config/config')
-const expressConfig = require('./config/express')
-const app = express();
-
-expressConfig(app);
-app.get('/', (req, res) => {
-    res.render('home', { layout: false })
-})
-app.get('/create', (req, res) => {
-    res.render('create', { layout: false })
-})
-app.get('/about', (req, res) => {
-    res.render('about', { layout: false })
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const routes = require('./router')
+const app = express()
+require('./config/express')(app)
+app.use(routes)
 
 app.listen(config.PORT);
