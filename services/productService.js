@@ -17,7 +17,7 @@ function createProduct(data) {
         data.imageUrl,
         data.difficultyLevel)
     productsData.push(cube)
-    fs.writeFile(__dirname + '/../config/db.json', JSON.stringify(productsData), (err) => {
+    fs.writeFile(__dirname + '/../config/db.json', JSON.stringify(productsData, null, 2), (err) => {
         if (err) {
             return console.log(err);
         }
@@ -29,5 +29,6 @@ function createProduct(data) {
 
 
 module.exports = {
-    create: createProduct
+    create: createProduct,
+    getAll
 }

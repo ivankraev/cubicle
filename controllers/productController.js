@@ -3,10 +3,13 @@ const router = Router();
 const productService = require('../services/productService')
 
 router.get('/', (req, res) => {
-    res.render('home', { title: 'Browse' });
+    let products = productService.getAll();
+    res.render('home', { title: 'Browse', products });
 })
 
 router.get('/create', (req, res) => {
+
+
     res.render('create', { title: 'Create' });
 })
 

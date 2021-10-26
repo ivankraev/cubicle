@@ -1,1 +1,22 @@
-[{"id":"1fapem43kkv8k301j","name":"1fapem43kkv8k301k","description":"assda","imageUrl":"dsfds","difficultyLevel":"dsfs"},{"id":"1fapem49skv8k4xl6","name":"sdfds","description":"sddfs","imageUrl":"fsdfsd","difficultyLevel":"1"}]
+[{
+        "id": "1fapem1l4kv8m0neo",
+        "name": "Ice Cube",
+        "description": "Some kind of fancy cube",
+        "imageUrl": "https://static.politico.com/dims4/default/926bcee/2147483647/resize/1160x%3E/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F4c%2F01%2F739ff7e740638482750f52d60c1c%2F201015-ice-cube-getty-773.jpg",
+        "difficultyLevel": "3"
+    },
+    {
+        "id": "1fapem9xokv8m0tf5",
+        "name": "asdas",
+        "description": "dasdas",
+        "imageUrl": "dasdas",
+        "difficultyLevel": "4"
+    },
+    {
+        "id": "1fapem75skv8mgbrl",
+        "name": "efsd",
+        "description": "dsfsd",
+        "imageUrl": "fsdfsd",
+        "difficultyLevel": "5"
+    }
+]
