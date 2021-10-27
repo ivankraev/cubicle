@@ -1,11 +1,15 @@
 const Cube = require('../models/Cube')
 const uniqid = require('uniqid')
 const productsData = require('../config/db')
-const fs = require('fs')
+const fs = require('fs/promises')
 
 
-function getAll() {
-    return productsData
+function getAll(query) {
+    let result = productsData.slice()
+    if (query.search) {
+        result = result.filter(x => x.name.toLowerCase().includes(query.search.toLowerCase()))
+    }
+    return result
 }
 
 function getOne(id) {
@@ -14,7 +18,7 @@ function getOne(id) {
 }
 
 
-function createProduct(data) {
+async function createProduct(data) {
     let cube = new Cube(
         uniqid(),
         data.name,
@@ -22,11 +26,8 @@ function createProduct(data) {
         data.imageUrl,
         data.difficultyLevel)
     productsData.push(cube)
-    fs.writeFile(__dirname + '/../config/db.json', JSON.stringify(productsData, null, 2), (err) => {
-        if (err) {
-            return console.log(err);
-        }
-    })
+        /* promise */
+    return await fs.writeFile(__dirname + '/../config/db.json', JSON.stringify(productsData, null, 2))
 
 }
 

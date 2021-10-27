@@ -5,7 +5,7 @@ const { validateProduct } = require('../helpers/productHelpers')
 
 
 router.get('/', (req, res) => {
-    let products = productService.getAll();
+    let products = productService.getAll(req.query);
     res.render('home', { title: 'Browse', products });
 })
 
@@ -16,9 +16,9 @@ router.get('/create', (req, res) => {
 })
 
 router.post('/create', validateProduct, (req, res) => {
-    let data = req.body;
-    productService.create(data)
-    res.redirect('/')
+    productService.create(req.body)
+        .then(() => res.redirect('/'))
+        .catch(() => res.status(500).end())
 })
 
 
