@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const router = Router();
 const productService = require('../services/productService')
-
+const { validateProduct } = require('../helpers/productHelpers')
 
 
 router.get('/', (req, res) => {
@@ -26,20 +26,7 @@ router.get('/details/:id', (req, res) => {
     res.render('details', { title: 'Details', cube: productService.getOne(req.params.id) });
 })
 
-function validateProduct(req, res, next) {
-    let isValid = true;
-    if ((req.body.name.trim().length < 2) || !req.body.imageUrl) {
-        isValid = false;
-    }
-    if (isValid) {
-        next();
-    } else {
-        res.redirect('/create')
-    }
 
-
-
-}
 
 
 
