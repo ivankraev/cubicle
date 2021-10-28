@@ -1,29 +1,44 @@
-[{
-        "id": "1fapem1l4kv8m0neo",
-        "name": "Ice Cube",
-        "description": "Some kind of fancy cube",
-        "imageUrl": "https://static.politico.com/dims4/default/926bcee/2147483647/resize/1160x%3E/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F4c%2F01%2F739ff7e740638482750f52d60c1c%2F201015-ice-cube-getty-773.jpg",
-        "difficultyLevel": "3"
-    },
-    {
-        "id": "1fapemalskv8pjn4w",
-        "name": "Blank Cube",
-        "description": "Just a blank cube nothing else.",
-        "imageUrl": "https://www.smartandgreen.eu/292/cube-sharp.jpg",
-        "difficultyLevel": "1"
-    },
-    {
-        "id": "1fapem7n8kv8plkub",
-        "name": "Par Cube",
-        "description": "Light Providing Cube",
-        "imageUrl": "https://leds-c4.com/sites/default/files/migrate/images/storage/families/4055/slider/1610883535-cube-pro-16-z5.jpg",
-        "difficultyLevel": "3"
-    },
-    {
-        "id": "1fapem7j4kv8pt6fu",
-        "name": "Cute Cube",
-        "description": "Some different cube",
-        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/5b/4a/30/5b4a3016-911b-fbb0-7d72-21dfe7a5ade7/source/512x512bb.jpg",
-        "difficultyLevel": "1"
-    }
+[
+  {
+    "id": "1fapem1l4kv8m0neo",
+    "name": "Ice Cube",
+    "description": "Some kind of fancy cube",
+    "imageUrl": "https://static.politico.com/dims4/default/926bcee/2147483647/resize/1160x%3E/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F4c%2F01%2F739ff7e740638482750f52d60c1c%2F201015-ice-cube-getty-773.jpg",
+    "difficultyLevel": "3"
+  },
+  {
+    "id": "1fapemalskv8pjn4w",
+    "name": "Blank Cube",
+    "description": "Just a blank cube nothing else.",
+    "imageUrl": "https://www.smartandgreen.eu/292/cube-sharp.jpg",
+    "difficultyLevel": "1"
+  },
+  {
+    "id": "1fapem7n8kv8plkub",
+    "name": "Par Cube",
+    "description": "Light Providing Cube",
+    "imageUrl": "https://leds-c4.com/sites/default/files/migrate/images/storage/families/4055/slider/1610883535-cube-pro-16-z5.jpg",
+    "difficultyLevel": "3"
+  },
+  {
+    "id": "1fapem7j4kv8pt6fu",
+    "name": "Cute Cube",
+    "description": "Some different cube",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/5b/4a/30/5b4a3016-911b-fbb0-7d72-21dfe7a5ade7/source/512x512bb.jpg",
+    "difficultyLevel": "1"
+  },
+  {
+    "id": "1fapemu0kvb0c5bb",
+    "name": "dasdas",
+    "description": "adssa",
+    "imageUrl": "sada",
+    "difficultyLevel": "2"
+  },
+  {
+    "id": "1fapem71gkvb0casf",
+    "name": "asdasd",
+    "description": "dadas",
+    "imageUrl": "dasdsa",
+    "difficultyLevel": "6"
+  }
 ]

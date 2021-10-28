@@ -9,6 +9,15 @@ function getAll(query) {
     if (query.search) {
         result = result.filter(x => x.name.toLowerCase().includes(query.search.toLowerCase()))
     }
+    if (query.from) {
+        result = result.filter(x => Number(x.difficultyLevel) >= query.from)
+    }
+    if (query.to) {
+        result = result.filter(x => Number(x.difficultyLevel) <= query.to)
+    }
+
+
+
     return result
 }
 
