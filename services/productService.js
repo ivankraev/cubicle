@@ -4,16 +4,16 @@ const productsData = require('../config/db')
 const fs = require('fs/promises')
 
 
-function getAll(query) {
+function getAll({ search, from, to }) {
     let result = productsData.slice()
-    if (query.search) {
-        result = result.filter(x => x.name.toLowerCase().includes(query.search.toLowerCase()))
+    if (search) {
+        result = result.filter(x => x.name.toLowerCase().includes(search.toLowerCase()))
     }
-    if (query.from) {
-        result = result.filter(x => Number(x.difficultyLevel) >= query.from)
+    if (from) {
+        result = result.filter(x => Number(x.difficultyLevel) >= from)
     }
-    if (query.to) {
-        result = result.filter(x => Number(x.difficultyLevel) <= query.to)
+    if (to) {
+        result = result.filter(x => Number(x.difficultyLevel) <= to)
     }
 
 
