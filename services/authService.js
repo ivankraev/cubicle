@@ -11,4 +11,11 @@ const register = async({ username, password }) => {
     }
 }
 
-module.exports = { register };
+const login = async({ username, password }) => {
+
+}
+
+module.exports = {
+    register,
+    login,
+};

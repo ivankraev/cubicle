@@ -15,8 +15,14 @@ router.post('/register', async(req, res) => {
         return res.render('register', { err: 'Password missmatch!' })
     }
 
-    await authService.register({ username, password })
-    res.redirect('/')
+    let user = await authService.register({ username, password })
+    res.redirect('/login')
+
+})
+
+
+router.post('/login', async(req, res) => {
+    const { username, password } = req.body
 
 })
 
